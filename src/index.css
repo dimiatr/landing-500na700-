@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import "tailwindcss";
+
+@theme {
+    --font-inter: 'Inter';
+
+    --spacing-firmScreen: 1440px;
+
+    --color-firmBlack: #0F0F17;
+    --color-firmOrange: #FB8627;
+    --color-firmViolet: #F5BEF6;
+}
+
+body {
+    font-family: 'Inter'; 
+ }
+
+ h1 {
+    font-size: 40px;
+    line-height: 110%;
+ }
+
+ h2 {
+    font-size: 24px;
+    line-height: 110%;
+ }
+
+ h3 {
+    font-size: 20px;
+    line-height: 110%;
+ }
+
+ .anim {
+    transition: all 200ms linear;
+ }
+  
+ .container {
+    max-width: var(--spacing-firmScreen);
+    margin: 0 auto;
+    width: 100%;
+ }
+
+ .max {
+   height: max-content;
+ }
+
+ input:checked + div div {
+   @apply bg-transparent;
+ }
